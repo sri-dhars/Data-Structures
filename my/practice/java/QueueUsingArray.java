@@ -1,6 +1,6 @@
 package my.practice.java;
 
-public class QueseUsingArray {
+public class QueueUsingArray {
 	
 	int array[];
 	public int fin;
