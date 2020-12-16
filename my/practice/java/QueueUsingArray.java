@@ -3,10 +3,13 @@ package my.practice.java;
 import java.util.Arrays;
 
 public class QueueUsingArray {
+	
+	private static int size = 5;//setting the size of an array
+	
 	int array[] = new int[size];
 	public int fin;//first element of the array
 	public int fout;//last element of an array
-	private static int size = 5;//setting the size of an array
+	
 
 
 	public QueueUsingArray(){
@@ -32,12 +35,21 @@ public class QueueUsingArray {
 		}
 		return d;
 	}
-    
+        public void printQueue(){
+		for(int i=0; i<queue.length;i++){
+			system.out.println(queue[1]);
+	}
+
+	/**
+	Results after excuting this main
+	
+	*/
 	public static void main(String[] args) {
         int resultArray[];
-		QueueUsingArray queueusingarray = new QueueUsingArray();
+		QueueUsingArray queueUsingArray = new QueueUsingArray();
 		System.out.println("Elements in the queue are : ");
 		resultArray=queueusingarray.enqueue(4);
+		queueusingarray.printQueue(resultArray);
 		resultArray=queueusingarray.enqueue(8);
 		resultArray=queueusingarray.enqueue(12);
 		resultArray=queueusingarray.enqueue(16);
